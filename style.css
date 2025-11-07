@@ -1,7 +1,7 @@
 .flex-item{
     background: salmon;
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     border: 2px solid black;
 }
 
@@ -9,4 +9,27 @@
     display: flex;
     justify-content:space-around;
     flex-direction: row-reverse;
+    align-items: stretch;
+    
+
+    
+
+    border: 2px solid red;
+    height: 200px;
+}
+
+/* Can change the direction back to column, but it means the MAIN AXIS swtiches */
+
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: 2px solid blue;
+    height: 200px;
+}
+
+#special{
+    flex-grow: 1;
 }
